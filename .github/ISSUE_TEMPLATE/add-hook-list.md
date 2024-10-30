@@ -36,6 +36,6 @@ Checklist
 
 **Please provide the following information for your token.**
 
-List URL: ${{ inputs.url }}
+List URL: ${{ url }}
 List Name: ${{ inputs.list_name }}
 Link to the official homepage of the list manager: ${{ inputs.homepage }}
