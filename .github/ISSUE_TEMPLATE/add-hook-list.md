@@ -5,6 +5,20 @@ title: 'Request: add {List name}'
 labels: list-request
 assignees: ''
 
+inputs:
+  url:
+    description: 'List URL must be HTTPS, IPFS or ENS.'
+    required: true
+    default: ''
+  list_name:
+    description: 'List Name'
+    required: true
+    default: ''
+  homepage:
+    description: 'Link to the official homepage of the list manager'
+    required: false
+    default: ''
+
 ---
 
 Before submission delete this line:
@@ -21,8 +35,7 @@ Checklist
 - [ ] I will not ping the Discord about this listing request.
 
 **Please provide the following information for your token.**
-List url must be HTTPS, IPFS or ENS.
 
-List URL: 
-List Name: 
-Link to the official homepage of the list manager:
+List URL: ${{ inputs.url }}
+List Name: ${{ inputs.list_name }}
+Link to the official homepage of the list manager: ${{ inputs.homepage }}
